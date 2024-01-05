@@ -14,5 +14,9 @@ namespace AuctionService.Entities
         // nav properties
         public Auction Auction { get; set; }
         public Guid AuctionId { get; set; }
+
+        // Foreign key to Category
+        public Guid CategoryId { get; set; }
+        public Category Category { get; set; }
     }
 }

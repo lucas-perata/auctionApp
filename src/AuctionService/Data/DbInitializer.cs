@@ -23,6 +23,17 @@ namespace AuctionService.Data
                 return; 
             }
 
+            var categories = new List<Category>
+            {
+                new Category { Id = Guid.NewGuid(), Name = "Cleaning Services" },
+                new Category { Id = Guid.NewGuid(), Name = "Pet Services" },
+                new Category { Id = Guid.NewGuid(), Name = "Landscaping" },
+                // Add more categories as needed
+            };
+
+    context.AddRange(categories);
+    context.SaveChanges();
+
             var auctions = new List<Auction>(){
                 	    
             new Auction
@@ -36,6 +47,7 @@ namespace AuctionService.Data
                 {
                     Title = "Sparkle Clean",
                     Description = "Professional cleaning for homes and offices",
+                    CategoryId = categories[0].Id,
                     ImageUrl = "https://media.istockphoto.com/id/1446816903/es/foto/servicio-de-limpieza-profunda-limpiador-profesional-de-lavado-de-suelo-blanco-en-sal%C3%B3n-de.jpg?s=2048x2048&w=is&k=20&c=fd9o0WOr3VtsFgdcXRXr2I7SganHgfWe3pEzS56-8ZM="
                 }
             },
@@ -50,6 +62,7 @@ namespace AuctionService.Data
                 {
                     Title = "Paws in Motion",
                     Description = "Reliable dog walking and pet sitting services",
+                    CategoryId = categories[1].Id,
                     ImageUrl = "https://media.istockphoto.com/id/1470365375/es/foto/los-perros-pastores-de-varios-tipos-de-perros-son-muy-lindos-en-el-camino.jpg?s=2048x2048&w=is&k=20&c=idtPapCmEbPc4b3teL9m_tTIEYhcgC0xFDuale1YqQA="
                 }
             },
@@ -63,6 +76,7 @@ namespace AuctionService.Data
                 {
                     Title = "GreenThumb Landscapes",
                     Description = "Lawn mowing, landscaping, and garden maintenance",
+                    CategoryId = categories[2].Id,
                     ImageUrl = "https://media.istockphoto.com/id/1445233447/es/foto/jardinero-paisajista-colocando-c%C3%A9sped-para-el-nuevo-c%C3%A9sped.jpg?s=2048x2048&w=is&k=20&c=ZOM9-8fiAs_pXUDltEphAFuAutT78zAwDa5F53PHE_w="
                 }
             },
@@ -77,6 +91,7 @@ namespace AuctionService.Data
                 {
                     Title = "Gourmet Delights",
                     Description = "Customized meal preparation and catering",
+                    CategoryId = categories[0].Id,
                     ImageUrl = "https://media.istockphoto.com/id/1434365849/es/foto/mujer-emocionada-cantando-y-bailando-en-la-cocina-moderna-de-casa-mujer-feliz-sosteniendo.jpg?s=2048x2048&w=is&k=20&c=yDJ1YhQprGfiHsm5E0N8pfZG-ARamp3tZLmnxSjYKtQ="
                 }
             },
@@ -91,6 +106,7 @@ namespace AuctionService.Data
                 {
                     Title = "TaskMaster Services",
                     Description = "Get your errands done efficiently and promptly",
+                    CategoryId = categories[1].Id,
                     ImageUrl = "https://media.istockphoto.com/id/1493705743/es/foto/joven-enfermera-abrazando-a-su-clienta-mayor.jpg?s=2048x2048&w=is&k=20&c=EnrX9HnQeus3mtxdVXR4r5jQ0OBX_DcLCL5wGTJpaUI="
                 }
             },
@@ -105,6 +121,7 @@ namespace AuctionService.Data
                 {
                     Title = "Academic Ace",
                     Description = "Expert tutoring for various subjects and levels",
+                    CategoryId = categories[2].Id,
                     ImageUrl = "https://cdn.pixabay.com/photo/2020/01/22/09/40/teacher-4784917_1280.jpg"
                 }
             },
@@ -119,6 +136,7 @@ namespace AuctionService.Data
                 {
                     Title = "TaskSwift Virtual Assistants",
                     Description = "Outsource your administrative tasks to skilled professionals",
+                    CategoryId = categories[0].Id,
                     ImageUrl = "https://media.istockphoto.com/id/1434661763/es/foto/retrato-de-una-joven-empresaria-exitosa-una-mujer-hispana-que-trabaja-dentro-de-un-moderno.jpg?s=2048x2048&w=is&k=20&c=68Z90YmC6rk5eB2rEwFvg2wwmnoOFGvFHSVtvxR8hUM="
                 }
             },
@@ -132,6 +150,7 @@ namespace AuctionService.Data
                 {
                     Title = "ShineWheels Auto Spa",
                     Description = "Comprehensive car detailing services for a showroom finish",
+                    CategoryId = categories[1].Id,
                     ImageUrl = "https://media.istockphoto.com/id/149298481/es/foto/esponja-en-el-coche-para-lavar.jpg?s=2048x2048&w=is&k=20&c=qXZXKjJKcphD5YMl5H5viBjIyvZb580c0WmGSiu1GSI="
                 }
             },
@@ -146,6 +165,7 @@ namespace AuctionService.Data
                 {
                     Title = "FitFocus Training",
                     Description = "Individualized fitness training and wellness coaching",
+                    CategoryId = categories[2].Id,
                     ImageUrl = "https://cdn.pixabay.com/photo/2017/08/06/00/27/yoga-2587066_1280.jpg"
                 }
             },
@@ -160,6 +180,7 @@ namespace AuctionService.Data
                 {
                     Title = "DreamEvents Co.",
                     Description = "Full-service event planning for special occasions",
+                    CategoryId = categories[0].Id,
                     ImageUrl = "https://media.istockphoto.com/id/1391430740/es/foto/primer-plano-de-la-mujer-de-negocios-escribiendo-notas-a-mano-verificando-el-horario-del.jpg?s=2048x2048&w=is&k=20&c=OHumoAKMOjmYcDSdznbekn46LfonlQxPSPHZLGx9ml8="
                 }
             } 

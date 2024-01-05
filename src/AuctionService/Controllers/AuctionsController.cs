@@ -26,6 +26,7 @@ namespace AuctionService.Controllers
     {
         var auctions = await _context.Auctions
                         .Include(x => x.Item)
+                        .ThenInclude(x => x.Category)
                         .OrderBy(x => x.Item.Title)
                         .ToListAsync(); 
         
@@ -37,6 +38,7 @@ namespace AuctionService.Controllers
     {
         var auction = await _context.Auctions
                         .Include(x => x.Item)
+                        .ThenInclude(x => x.Category)
                         .FirstOrDefaultAsync(x => x.Id == id); 
 
         if (auction == null) return NotFound(); 
