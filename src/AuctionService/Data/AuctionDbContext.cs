@@ -12,5 +12,13 @@ namespace AuctionService.Data
         }    
 
         public DbSet<Auction> Auctions {get; set;}
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Item>()
+                .HasOne(i => i.Category)
+                .WithMany(c => c.Items)
+                .HasForeignKey(i => i.CategoryId);
+                }
     }
 }
