@@ -212,3 +212,5 @@ ClientBin/
 *.dbmdl
 *.dbproj.schemaview
 *.jfm
+src/SearchService/obj/Debug/net7.0/SearchService.assets.cache
+src/SearchService/obj/Debug/net7.0/SearchService.assets.cache
