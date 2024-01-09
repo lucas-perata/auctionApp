@@ -4,14 +4,14 @@
     "C:\\Users\\lucas\\OneDrive\\Escritorio\\Git\\auctionApp\\auctionApp\\src\\SearchService\\SearchService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucas\\OneDrive\\Escritorio\\Git\\auctionApp\\auctionApp\\src\\SearchService\\SearchService.csproj": {
+    "C:\\Users\\lucas\\OneDrive\\Escritorio\\Git\\auctionApp\\auctionApp\\src\\Contracts\\Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucas\\OneDrive\\Escritorio\\Git\\auctionApp\\auctionApp\\src\\SearchService\\SearchService.csproj",
-        "projectName": "SearchService",
-        "projectPath": "C:\\Users\\lucas\\OneDrive\\Escritorio\\Git\\auctionApp\\auctionApp\\src\\SearchService\\SearchService.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\OneDrive\\Escritorio\\Git\\auctionApp\\auctionApp\\src\\Contracts\\Contracts.csproj",
+        "projectName": "Contracts",
+        "projectPath": "C:\\Users\\lucas\\OneDrive\\Escritorio\\Git\\auctionApp\\auctionApp\\src\\Contracts\\Contracts.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucas\\OneDrive\\Escritorio\\Git\\auctionApp\\auctionApp\\src\\SearchService\\obj\\",
+        "outputPath": "C:\\Users\\lucas\\OneDrive\\Escritorio\\Git\\auctionApp\\auctionApp\\src\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,10 +39,87 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\lucas\\AppData\\Roaming\\.dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\lucas\\OneDrive\\Escritorio\\Git\\auctionApp\\auctionApp\\src\\SearchService\\SearchService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lucas\\OneDrive\\Escritorio\\Git\\auctionApp\\auctionApp\\src\\SearchService\\SearchService.csproj",
+        "projectName": "SearchService",
+        "projectPath": "C:\\Users\\lucas\\OneDrive\\Escritorio\\Git\\auctionApp\\auctionApp\\src\\SearchService\\SearchService.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas\\OneDrive\\Escritorio\\Git\\auctionApp\\auctionApp\\src\\SearchService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\lucas\\OneDrive\\Escritorio\\Git\\auctionApp\\auctionApp\\src\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\lucas\\OneDrive\\Escritorio\\Git\\auctionApp\\auctionApp\\src\\Contracts\\Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.1.3, )"
             },
             "Microsoft.Extensions.Http.Polly": {
               "target": "Package",
