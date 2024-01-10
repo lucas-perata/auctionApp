@@ -1,5 +1,6 @@
 using System;
 using AuctionService.Entities;
+using MassTransit;
 using Microsoft.EntityFrameworkCore;
 
 namespace AuctionService.Data
@@ -16,10 +17,16 @@ namespace AuctionService.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<Item>()
                 .HasOne(i => i.Category)
                 .WithMany(c => c.Items)
                 .HasForeignKey(i => i.CategoryId);
-                }
+
+            modelBuilder.AddInboxStateEntity();
+            modelBuilder.AddOutboxMessageEntity(); 
+            modelBuilder.AddOutboxStateEntity();
+        }
     }
 }

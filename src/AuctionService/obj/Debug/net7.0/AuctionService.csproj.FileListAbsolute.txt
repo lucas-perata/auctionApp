@@ -48,3 +48,4 @@ C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\
 C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\RabbitMQ.Client.dll
 C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\Contracts.dll
 C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\Contracts.pdb
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\MassTransit.EntityFrameworkCoreIntegration.dll

@@ -60,9 +60,9 @@ namespace AuctionService.Controllers
             return BadRequest("Invalid Category");
         }
 
-var auction = _mapper.Map<Auction>(auctionDto);
+        var auction = _mapper.Map<Auction>(auctionDto);
 
-    auction.Item.CategoryId = category.Id;
+        auction.Item.CategoryId = category.Id;
         
 
         // TODO: current user as seller
@@ -70,11 +70,11 @@ var auction = _mapper.Map<Auction>(auctionDto);
 
         _context.Auctions.Add(auction); 
 
-        var result = await _context.SaveChangesAsync() > 0; 
-
         var newAuction = _mapper.Map<AuctionDto>(auction); 
 
         await _publishEndpoint.Publish(_mapper.Map<AuctionCreated>(newAuction)); 
+
+        var result = await _context.SaveChangesAsync() > 0; 
 
         if(!result) return BadRequest("Could not save changes");
 
