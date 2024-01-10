@@ -19,5 +19,8 @@ namespace AuctionService.DTOs
 
         [Required]
         public DateTime AuctionEnd { get; set; }
+
+        [Required]
+        public string CategoryName { get; set; }
     }
 }
