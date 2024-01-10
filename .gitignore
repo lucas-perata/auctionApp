@@ -214,3 +214,8 @@ ClientBin/
 *.jfm
 src/SearchService/obj/Debug/net7.0/SearchService.assets.cache
 src/SearchService/obj/Debug/net7.0/SearchService.assets.cache
+src/AuctionService/obj/Debug/net7.0/AuctionService.AssemblyInfo.cs
+src/AuctionService/obj/Debug/net7.0/AuctionService.assets.cache
+src/AuctionService/obj/Debug/net7.0/AuctionService.GeneratedMSBuildEditorConfig.editorconfig
+src/SearchService/obj/Debug/net7.0/SearchService.assets.cache
+src/SearchService/obj/Debug/net7.0/SearchService.GeneratedMSBuildEditorConfig.editorconfig
