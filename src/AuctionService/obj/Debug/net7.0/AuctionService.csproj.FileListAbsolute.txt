@@ -38,3 +38,13 @@ C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\
 C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\obj\Debug\net7.0\AuctionService.csproj.AssemblyReference.cache
 C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\obj\Debug\net7.0\AuctionService.sourcelink.json
 C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\obj\Debug\net7.0\AuctionService.csproj.CopyComplete
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\MassTransit.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\MassTransit.Abstractions.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\MassTransit.RabbitMqTransport.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\RabbitMQ.Client.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\Contracts.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\Contracts.pdb

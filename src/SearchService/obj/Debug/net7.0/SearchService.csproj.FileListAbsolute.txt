@@ -46,3 +46,13 @@ C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\SearchService\b
 C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\SearchService\bin\Debug\net7.0\Microsoft.Extensions.Http.Polly.dll
 C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\SearchService\bin\Debug\net7.0\Polly.dll
 C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\SearchService\bin\Debug\net7.0\Polly.Extensions.Http.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\SearchService\bin\Debug\net7.0\MassTransit.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\SearchService\bin\Debug\net7.0\MassTransit.Abstractions.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\SearchService\bin\Debug\net7.0\MassTransit.RabbitMqTransport.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\SearchService\bin\Debug\net7.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\SearchService\bin\Debug\net7.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\SearchService\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\SearchService\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\SearchService\bin\Debug\net7.0\RabbitMQ.Client.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\SearchService\bin\Debug\net7.0\Contracts.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\SearchService\bin\Debug\net7.0\Contracts.pdb

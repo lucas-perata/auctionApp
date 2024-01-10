@@ -3,6 +3,8 @@ using AuctionService.DTOs;
 using AuctionService.Entities;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
+using Contracts;
+using MassTransit;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,12 +16,13 @@ namespace AuctionService.Controllers
     {
         private readonly AuctionDbContext _context;
         private readonly IMapper _mapper;
+        private readonly IPublishEndpoint _publishEndpoint;
 
-        public AuctionsController(AuctionDbContext context, IMapper mapper)
+        public AuctionsController(AuctionDbContext context, IMapper mapper, IPublishEndpoint publishEndpoint)
         {
             _context = context;
-
             _mapper = mapper;
+            _publishEndpoint = publishEndpoint;
         }
 
     [HttpGet]
@@ -51,7 +54,16 @@ namespace AuctionService.Controllers
     [HttpPost]
     public async Task<ActionResult<AuctionDto>> CreateAuction(CreateAuctionDto auctionDto)
     {
-        var auction = _mapper.Map<Auction>(auctionDto); 
+        var category = await _context.Category.FirstOrDefaultAsync(c => c.Name == auctionDto.CategoryName);
+        if(category == null)
+        {
+            return BadRequest("Invalid Category");
+        }
+
+var auction = _mapper.Map<Auction>(auctionDto);
+
+    auction.Item.CategoryId = category.Id;
+        
 
         // TODO: current user as seller
         auction.Seller = "test"; 
@@ -60,9 +72,14 @@ namespace AuctionService.Controllers
 
         var result = await _context.SaveChangesAsync() > 0; 
 
+        var newAuction = _mapper.Map<AuctionDto>(auction); 
+
+        await _publishEndpoint.Publish(_mapper.Map<AuctionCreated>(newAuction)); 
+
         if(!result) return BadRequest("Could not save changes");
 
-        return CreatedAtAction(nameof(GetAuctionById), new{auction.Id}, _mapper.Map<AuctionDto>(auction));
+        return CreatedAtAction(nameof(GetAuctionById), 
+        new{auction.Id}, _mapper.Map<AuctionDto>(auction));
     }
 
     [HttpPut("{id}")]
