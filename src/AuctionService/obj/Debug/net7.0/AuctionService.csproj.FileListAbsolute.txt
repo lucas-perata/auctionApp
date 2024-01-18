@@ -49,3 +49,10 @@ C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\
 C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\Contracts.dll
 C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\Contracts.pdb
 C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\MassTransit.EntityFrameworkCoreIntegration.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\lucas\OneDrive\Escritorio\Git\auctionApp\auctionApp\src\AuctionService\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
