@@ -241,3 +241,7 @@ src/SearchService/obj/Debug/net7.0/SearchService.csproj.AssemblyReference.cache
 src/SearchService/obj/Debug/net7.0/SearchService.pdb
 src/SearchService/obj/Debug/net7.0/SearchService.sourcelink.json
 >>>>>>> 298a2ff0bd20fd5a0342406b56d8cb0ace222986
+src/SearchService/obj/Debug/net7.0/SearchService.csproj.AssemblyReference.cache
+src/AuctionService/obj/Debug/net7.0/AuctionService.csproj.AssemblyReference.cache
+src/SearchService/obj/Debug/net7.0/SearchService.csproj.AssemblyReference.cache
+src/AuctionService/obj/Debug/net7.0/AuctionService.csproj.AssemblyReference.cache
