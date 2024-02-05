@@ -46,7 +46,9 @@ namespace AuctionService.Controllers
     [HttpPost]
     public async Task<ActionResult<AuctionDto>> CreateAuction(CreateAuctionDto auctionDto)
     {
-        var category = await _repo.CheckCategoryExists(auctionDto.CategoryName);
+        // var checkCategory = await _repo.CheckCategoryExists(auctionDto.CategoryName);
+        var category = await _repo.GetCategoryByName(auctionDto.CategoryName);
+       
         if(category == null)
         {
             return BadRequest("Invalid Category");

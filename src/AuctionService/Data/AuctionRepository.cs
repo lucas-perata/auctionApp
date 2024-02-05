@@ -21,12 +21,12 @@ namespace AuctionService.Data
             _context.Auctions.Add(auction);
         }
 
-        public async Task<Auction> CheckCategoryExists(string categoryName)
+        public async Task<bool> CheckCategoryExists(string categoryName)
         {
             return await _context.Auctions
-                        .Include(x => x.Item)
-                        .ThenInclude(x => x.Category)
-                        .FirstOrDefaultAsync(x => x.Item.Category.Name == categoryName);
+                 .Include(x => x.Item)
+                 .ThenInclude(x => x.Category)
+                 .AnyAsync(x => x.Item.Category.Name == categoryName);
         }
 
         public async Task<AuctionDto> GetAuctionByIdAsync(Guid id)
@@ -56,6 +56,11 @@ namespace AuctionService.Data
             }
 
             return await query.ProjectTo<AuctionDto>(_mapper.ConfigurationProvider).ToListAsync();
+        }
+
+        public async Task<Category> GetCategoryByName(string categoryName)
+        {
+            return await _context.Category.FirstOrDefaultAsync(x => x.Name == categoryName);
         }
 
         public void RemoveAuction(Auction auction)

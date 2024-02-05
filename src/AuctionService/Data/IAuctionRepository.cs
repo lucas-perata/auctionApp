@@ -12,7 +12,8 @@ namespace AuctionService.Data
         Task<List<AuctionDto>> GetAuctionsAsync(string date);
         Task<AuctionDto> GetAuctionByIdAsync(Guid id);
         Task<Auction> GetAuctionEntityById(Guid id);
-        Task<Auction> CheckCategoryExists(string categoryName);
+        Task<bool> CheckCategoryExists(string categoryName);
+        Task<Category> GetCategoryByName(string categoryName);
         void AddAuction(Auction auction);   
         void RemoveAuction(Auction auction);
         Task<bool> SaveChangesAsync();
